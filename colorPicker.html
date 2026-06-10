@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="colorPicker.css">
+</head>
+<body id="bgContainer">
+
+    <div class="container">
+        <h1>Color Picker</h1>
+
+        <div class="color-boxes">
+            <button class="color-btn gray"
+                onclick="changeColor('lightgray')">
+                Gray
+            </button>
+
+            <button class="color-btn green"
+                onclick="changeColor('lightgreen')">
+                Green
+            </button>
+
+            <button class="color-btn blue"
+                onclick="changeColor('lightblue')">
+                Blue
+            </button>
+
+            <button class="color-btn purple"
+                onclick="changeColor('plum')">
+                Purple
+            </button>
+        </div>
+
+        <div class="result">
+            Background Color :
+            <span id="colorCode">white</span>
+        </div>
+
+        <p>
+            Try to click on one of the colors box above to
+            change the background color of this page!
+        </p>
+    </div>
+
+    <script src="colorPicker.js"></script>
+</body>
+</html>
